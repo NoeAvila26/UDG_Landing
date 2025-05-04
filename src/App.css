@@ -58,3 +58,8 @@ body{
   margin-left: 50px;
 }
 
+.card-tercera img {
+  margin-top: 20px;
+  height: 150px;
+  object-fit: cover;
+}
