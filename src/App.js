@@ -6,6 +6,7 @@ import NavBar from './Components/NavBar';
 import Header from './Components/Header';
 import Card from './Components/Card'
 import BodyProducts from './Components/BodyProducts'
+import SubMicro from './Components/SubMicro'
 import FooterExample from './Components/Footer';
 
 
@@ -20,6 +21,10 @@ function App() {
         {/* Ruta protegida (solo accesible si hay sesión) */}
         <Route path="/Home" element={<ProtectedRoute><Home /></ProtectedRoute>} />
 
+        {/* Ruta protegida a SubMicro */}
+        <Route path="/submicro" element={<ProtectedRoute><SubMicro /></ProtectedRoute>} />
+
+
         {/* Redirección por defecto */}
         <Route path="*" element={<Navigate to="/Login" />} />
       </Routes>
@@ -27,6 +32,8 @@ function App() {
 
   );
 }
+
+
 
 function Home() {
   return (

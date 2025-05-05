@@ -1,9 +1,19 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import { Button, Container, Form, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 
 
 
 function NavScrollExample() {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/Home'); // Redirige a la ruta que agregaste
+  };
+
+
+
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
@@ -15,7 +25,7 @@ function NavScrollExample() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
+            <Nav.Link href="#action1" onClick={handleClick}>Home</Nav.Link>
             <Nav.Link href="#action2">Hornos</Nav.Link>
             <NavDropdown title="Batidoras" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
