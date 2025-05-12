@@ -7,6 +7,8 @@ import Header from './Components/Header';
 import Card from './Components/Card'
 import BodyProducts from './Components/BodyProducts'
 import SubMicro from './Components/SubMicro'
+import SubBatidoras from './Components/SubBatidoras'
+import SubLicuadoras from './Components/SubLicuadoras'
 import FooterExample from './Components/Footer';
 
 
@@ -23,6 +25,12 @@ function App() {
 
         {/* Ruta protegida a SubMicro */}
         <Route path="/submicro" element={<ProtectedRoute><SubMicro /></ProtectedRoute>} />
+
+        {/* Ruta protegida a SubBatidoras */}
+        <Route path="/subBatidoras" element={<ProtectedRoute><SubBatidoras /></ProtectedRoute>} />
+
+        {/* Ruta protegida a SubLicuadoras */}
+        <Route path="/subLicuadoras" element={<ProtectedRoute><SubLicuadoras /></ProtectedRoute>} />
 
 
         {/* Redirección por defecto */}

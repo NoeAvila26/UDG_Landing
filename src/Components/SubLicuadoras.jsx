@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 
 // import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
-import Img5 from '../Images/Horno-semi.jpg';
+import Img5 from '../Images/LicuadoraIndustrial.png';
 
 
 
@@ -19,15 +19,15 @@ function ShapeExample() {
       <Header />
       <Container className="imagenes-thumb w-100">
         <br />
-        <h1 className="text-center mt-5 mb-5">Hornos de microondas</h1>
+        <h1 className="text-center mt-5 mb-5">Licuadoras</h1>
         <Row className="justify-content-center">
           <Col xs={6} md={4} className="mb-4 px-2" style={{ maxWidth: '300px' }}>
             <Card>
               <Card.Img variant="top" src={Img5} />
               <Card.Body>
-                <Card.Title>Amana CX10</Card.Title>
+                <Card.Title>Ninja Blend</Card.Title>
                 <Card.Text>
-                  Horno de microondas de uso comercial, ideal para cocinas industriales.
+                  Licuadora de uso comercial, ideal para cocinas industriales.
                 </Card.Text>
               </Card.Body>
               <Button variant="secondary" size="sm">
@@ -40,9 +40,9 @@ function ShapeExample() {
             <Card>
               <Card.Img variant="top" src={Img5} />
               <Card.Body>
-                <Card.Title>Amana CX10</Card.Title>
+                <Card.Title>Ninja Blend</Card.Title>
                 <Card.Text>
-                  Horno de microondas de uso comercial, ideal para cocinas industriales.
+                  Licuadora de uso comercial, ideal para cocinas industriales.
                 </Card.Text>
               </Card.Body>
               <Button variant="secondary" size="sm">
@@ -55,9 +55,9 @@ function ShapeExample() {
             <Card>
               <Card.Img variant="top" src={Img5} />
               <Card.Body>
-                <Card.Title>Amana CX10</Card.Title>
+                <Card.Title>Ninja Blend</Card.Title>
                 <Card.Text>
-                  Horno de microondas de uso comercial, ideal para cocinas industriales.
+                  Licuadora de uso comercial, ideal para cocinas industriales.
                 </Card.Text>
               </Card.Body>
               <Button variant="secondary" size="sm">

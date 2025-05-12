@@ -15,7 +15,15 @@ function GridExample() {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/submicro'); // Redirige a la ruta que agregaste
+    navigate('/subMicro'); // Redirige a la ruta que agregaste
+  };
+
+  const handleClick2 = () => {
+    navigate('/SubBatidoras'); // Redirige a la ruta que agregaste
+  };
+
+  const handleClick3 = () => {
+    navigate('/SubLicuadoras'); // Redirige a la ruta que agregaste
   };
 
   return (
@@ -49,14 +57,14 @@ function GridExample() {
           <Card className="border-1 h-100 w-100">
             <Row className="g-2 align-items-center">
               <Col xs={4}>
-                <img src={Img4} className="img-fluid rounded-start" alt="..." />
+                <img src={Img4} className="img-fluid rounded-start" alt="..." onClick={handleClick2} />
               </Col>
               <Col xs={8}>
                 <Card.Body>
                   <Card.Title>BATIDORAS</Card.Title>
                   <Card.Text>Las mejores batidoras</Card.Text>
                   <Card.Text>
-                  <Button variant="secondary" size="sm">
+                  <Button variant="secondary" size="sm" onClick={handleClick2}>
                       Encuentralas aquí
                     </Button>
                   </Card.Text>
@@ -71,15 +79,15 @@ function GridExample() {
           <Card className="border-1 h-100 w-100">
             <Row className="g-2 align-items-center">
               <Col xs={4}>
-                <img src={Img6} className="img-fluid rounded-start" alt="..." />
+                <img src={Img6} className="img-fluid rounded-start" alt="..." onClick={handleClick3} />
               </Col>
               <Col xs={8}>
                 <Card.Body>
                   <Card.Title>LICUADORAS</Card.Title>
                   <Card.Text>This is a wider card with supporting text below.</Card.Text>
                   <Card.Text>
-                  <Button variant="secondary" size="sm">
-                      Small button
+                  <Button variant="secondary" size="sm" onClick={handleClick3}>
+                  Encuentralas aquí
                     </Button>
                   </Card.Text>
                 </Card.Body>
