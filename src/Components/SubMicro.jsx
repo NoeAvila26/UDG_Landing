@@ -1,5 +1,7 @@
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
+import { useNavigate } from 'react-router-dom';
+
 import NavBar from './NavBar';
 import Header from './Header'
 import Card from 'react-bootstrap/Card';
@@ -7,12 +9,19 @@ import Button from 'react-bootstrap/Button';
 
 // import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
-import Img5 from '../Images/Horno-semi.jpg';
-
+import Img1 from '../Images/amana-HDC18SD2-1.jpg';
+import Img2 from '../Images/amana-RCS10TS-2.jpg';
 
 
 
 function ShapeExample() {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/ProductMicro'); // Redirige a la ruta que agregaste
+  };
+
   return (
     <div>
       <NavBar />
@@ -23,7 +32,22 @@ function ShapeExample() {
         <Row className="justify-content-center">
           <Col xs={6} md={4} className="mb-4 px-2" style={{ maxWidth: '300px' }}>
             <Card>
-              <Card.Img variant="top" src={Img5} />
+              <Card.Img variant="top" src={Img1} />
+              <Card.Body>
+                <Card.Title>Amana CX10</Card.Title>
+                <Card.Text>
+                  Horno de microondas de uso comercial, ideal para cocinas industriales.
+                </Card.Text>
+              </Card.Body>
+              <Button variant="secondary" size="sm" onClick={handleClick}>
+                Ver
+              </Button>
+            </Card>
+          </Col>
+
+          <Col xs={6} md={4} className="mb-4 px-2" style={{ maxWidth: '300px' }}>
+            <Card>
+              <Card.Img variant="top" src={Img2} />
               <Card.Body>
                 <Card.Title>Amana CX10</Card.Title>
                 <Card.Text>
@@ -38,22 +62,7 @@ function ShapeExample() {
 
           <Col xs={6} md={4} className="mb-4 px-2" style={{ maxWidth: '300px' }}>
             <Card>
-              <Card.Img variant="top" src={Img5} />
-              <Card.Body>
-                <Card.Title>Amana CX10</Card.Title>
-                <Card.Text>
-                  Horno de microondas de uso comercial, ideal para cocinas industriales.
-                </Card.Text>
-              </Card.Body>
-              <Button variant="secondary" size="sm">
-                Ver
-              </Button>
-            </Card>
-          </Col>
-
-          <Col xs={6} md={4} className="mb-4 px-2" style={{ maxWidth: '300px' }}>
-            <Card>
-              <Card.Img variant="top" src={Img5} />
+              <Card.Img variant="top" src={Img1} />
               <Card.Body>
                 <Card.Title>Amana CX10</Card.Title>
                 <Card.Text>

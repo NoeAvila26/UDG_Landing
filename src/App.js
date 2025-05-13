@@ -9,6 +9,9 @@ import BodyProducts from './Components/BodyProducts'
 import SubMicro from './Components/SubMicro'
 import SubBatidoras from './Components/SubBatidoras'
 import SubLicuadoras from './Components/SubLicuadoras'
+import ProductMicro from './Components/ProductMicro'
+import ProductBatidora from './Components/ProductBatidora'
+
 import FooterExample from './Components/Footer';
 
 
@@ -32,6 +35,11 @@ function App() {
         {/* Ruta protegida a SubLicuadoras */}
         <Route path="/subLicuadoras" element={<ProtectedRoute><SubLicuadoras /></ProtectedRoute>} />
 
+        {/* Ruta protegida a CardMicro */}
+        <Route path="/ProductMicro" element={<ProtectedRoute><ProductMicro /></ProtectedRoute>} />
+
+         {/* Ruta protegida a CardMicro */}
+         <Route path="/ProductBatidora" element={<ProtectedRoute><ProductBatidora /></ProtectedRoute>} />
 
         {/* Redirección por defecto */}
         <Route path="*" element={<Navigate to="/Login" />} />

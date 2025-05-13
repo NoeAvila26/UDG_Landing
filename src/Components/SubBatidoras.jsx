@@ -1,5 +1,7 @@
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
+import { useNavigate } from 'react-router-dom';
+
 import NavBar from './NavBar';
 import Header from './Header'
 import Card from 'react-bootstrap/Card';
@@ -7,12 +9,18 @@ import Button from 'react-bootstrap/Button';
 
 // import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
-import Img5 from '../Images/1103483898.avif';
-
-
+import Img1 from '../Images/batidora-adobestock2.jpg';
+import Img2 from '../Images/batidora-gen2.jpg';
+import Img3 from '../Images/batidora-vevor450-2.jpg';
 
 
 function ShapeExample() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/ProductBatidora'); 
+  };
+
   return (
     <div>
       <NavBar />
@@ -23,14 +31,14 @@ function ShapeExample() {
         <Row className="justify-content-center">
           <Col xs={6} md={4} className="mb-4 px-2" style={{ maxWidth: '300px' }}>
             <Card>
-              <Card.Img variant="top" src={Img5} />
+              <Card.Img variant="top" src={Img1} />
               <Card.Body>
                 <Card.Title>Kitchen Aid Q1</Card.Title>
                 <Card.Text>
                   Batidora de uso comercial, ideal para cocinas industriales.
                 </Card.Text>
               </Card.Body>
-              <Button variant="secondary" size="sm">
+              <Button variant="secondary" size="sm" onClick={handleClick}>
                 Ver
               </Button>
             </Card>
@@ -38,7 +46,7 @@ function ShapeExample() {
 
           <Col xs={6} md={4} className="mb-4 px-2" style={{ maxWidth: '300px' }}>
             <Card>
-              <Card.Img variant="top" src={Img5} />
+              <Card.Img variant="top" src={Img2} />
               <Card.Body>
                 <Card.Title>Kitchen Aid Q2</Card.Title>
                 <Card.Text>
@@ -53,7 +61,7 @@ function ShapeExample() {
 
           <Col xs={6} md={4} className="mb-4 px-2" style={{ maxWidth: '300px' }}>
             <Card>
-              <Card.Img variant="top" src={Img5} />
+              <Card.Img variant="top" src={Img3} />
               <Card.Body>
                 <Card.Title>Kitchen Aid Q3</Card.Title>
                 <Card.Text>
