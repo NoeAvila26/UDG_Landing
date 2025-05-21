@@ -12,6 +12,22 @@ function NavScrollExample() {
     navigate('/Home'); // Redirige a la ruta que agregaste
   };
 
+  const handleClick2 = () => {
+    navigate('/Activities'); // Redirige a la ruta que agregaste
+  };
+
+    const handleClick3 = () => {
+    navigate('/System'); // Redirige a la ruta que agregaste
+  };
+
+    const handleClick4 = () => {
+    navigate('/Download'); // Redirige a la ruta que agregaste
+  };
+
+      const handleClick5 = () => {
+    navigate('/Report'); // Redirige a la ruta que agregaste
+  };
+
 
 
   return (
@@ -26,15 +42,18 @@ function NavScrollExample() {
             navbarScroll
           >
             <Nav.Link href="#action1" onClick={handleClick}>Home</Nav.Link>
-            <Nav.Link href="#action2">Hornos</Nav.Link>
-            <NavDropdown title="Batidoras" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
+            <Nav.Link href="#action2">Productos</Nav.Link>
+            <NavDropdown title="Actividades" id="navbarScrollingDropdown">
+              <NavDropdown.Item href="#action3" onClick={handleClick2}>Actividades realizadas</NavDropdown.Item>
+              <NavDropdown.Item href="#action4" onClick={handleClick3}>
+                Sistema implementado
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
+              <NavDropdown.Item href="#action5" onClick={handleClick4}>
+                Código fuente
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action5" onClick={handleClick5}>
+                Reporte
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="#" disabled>

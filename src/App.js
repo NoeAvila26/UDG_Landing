@@ -11,7 +11,10 @@ import SubBatidoras from './Components/SubBatidoras'
 import SubLicuadoras from './Components/SubLicuadoras'
 import ProductMicro from './Components/ProductMicro'
 import ProductBatidora from './Components/ProductBatidora'
-
+import Activities from './Components/Activities'
+import System from './Components/System'
+import Download from './Components/Download'
+import Report from './Components/Report'
 import FooterExample from './Components/Footer';
 
 
@@ -40,6 +43,18 @@ function App() {
 
          {/* Ruta protegida a CardMicro */}
          <Route path="/ProductBatidora" element={<ProtectedRoute><ProductBatidora /></ProtectedRoute>} />
+
+          {/* Ruta protegida a CardMicro */}
+         <Route path="/Activities" element={<ProtectedRoute><Activities /></ProtectedRoute>} />
+
+          {/* Ruta protegida a CardMicro */}
+         <Route path="/System" element={<ProtectedRoute><System /></ProtectedRoute>} />
+
+          {/* Ruta protegida a CardMicro */}
+         <Route path="/Download" element={<ProtectedRoute><Download /></ProtectedRoute>} />
+
+          {/* Ruta protegida a CardMicro */}
+         <Route path="/Report" element={<ProtectedRoute><Report /></ProtectedRoute>} />
 
         {/* Redirección por defecto */}
         <Route path="*" element={<Navigate to="/Login" />} />
